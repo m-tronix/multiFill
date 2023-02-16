@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2022 STMicroelectronics.
+  * Copyright (c) 2023 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32l0xx_hal.h"
+#include "stm32f0xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -57,10 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define led1_Pin GPIO_PIN_14
-#define led1_GPIO_Port GPIOC
-#define led2_Pin GPIO_PIN_15
-#define led2_GPIO_Port GPIOC
+#define led1_Pin GPIO_PIN_0
+#define led1_GPIO_Port GPIOF
+#define led2_Pin GPIO_PIN_1
+#define led2_GPIO_Port GPIOF
 #define time_ref_Pin GPIO_PIN_0
 #define time_ref_GPIO_Port GPIOA
 #define run_fwd_Pin GPIO_PIN_6
